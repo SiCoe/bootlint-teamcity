@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     util = require('gulp-util'),
     bootlint = require('gulp-bootlint'),
-    reporter = require('../'),
+    bootlintTeamcity = require('../'),
     assert = require('assert');
 
 var oldOut = process.stdout.write;
@@ -24,7 +24,7 @@ function lesshintTest(test) {
 
     gulp
         .src(['test/test-input*.html'], { base: '.' })
-        .pipe(bootlint(reporter))
+        .pipe(bootlint(bootlintTeamcity))
         .on('finish', function (callback) {
             var stripped = util.colors.stripColor(out || '');
             process.stdout.write = oldOut;
