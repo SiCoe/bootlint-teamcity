@@ -1,0 +1,36 @@
+{
+  "name": "bootlint-teamcity",
+  "version": "1.0.0",
+  "description": "BootLint TeamCity Reporter which group by files and BootLint Rule using TeamCity Test Suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "teamcity",
+    "bootlint",
+    "reporter"
+  ],
+  "author": "Simon Coe <sicoemail@googlemail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "teamcity-service-messages": "^0.1.8"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "gulp": "^3.9.1",
+    "gulp-bootlint": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "mocha": "^3.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SiCoe/bootlint-teamcity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SiCoe/bootlint-teamcity/issues"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
