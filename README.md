@@ -1,6 +1,11 @@
 bootlint-teamcity
 =================
 
+[![NPM version](https://img.shields.io/npm/v/bootlint-teamcity.svg)](https://www.npmjs.com/package/bootlint-teamcity)
+[![MIT License](https://img.shields.io/github/license/SiCoe/bootlint-teamcity.svg)](https://github.com/SiCoe/bootlint-teamcity/blob/master/LICENSE)
+[![Dependency Status](https://img.shields.io/david/SiCoe/bootlint-teamcity.svg)](https://david-dm.org/SiCoe/bootlint-teamcity)
+[![devDependency Status](https://img.shields.io/david/dev/SiCoe/bootlint-teamcity.svg)](https://david-dm.org/SiCoe/bootlint-teamcity?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/SiCoe/bootlint-teamcity.svg)](https://github.com/SiCoe/bootlint-teamcity/issues)
 
 TeamCity reporter for [bootlint](https://github.com/twbs/bootlint) errors.
 
