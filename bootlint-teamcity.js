@@ -11,6 +11,7 @@ function getFilePath(file) {
 
 module.exports = {
     reportFn: (file, lint, isError, isWarning, errorLocation) => {
+        'use strict';
         var filePath = getFilePath(file);
 
         if (!reportStore[filePath]) {
@@ -35,15 +36,16 @@ module.exports = {
         reportStore[filePath][lint.id].push(error);
     },
     summaryReportFn: (file, errorCount, warningCount) => {
+        'use strict';
         tsm.testSuiteStarted({ name: REPORTER });
         
         var filePath = getFilePath(file);
         tsm.testSuiteStarted({ name: filePath });
 
         if (errorCount > 0 || warningCount > 0) {
-            for (var errorRule in reportStore[filePath]) {
+            for (let errorRule in reportStore[filePath]) {
                 tsm.testSuiteStarted({ name: errorRule });
-                for (var error of reportStore[filePath][errorRule]) {
+                for (let error of reportStore[filePath][errorRule]) {
                     var name = (error.hasLocation ? ("line " + error.line + ", col " + error.col + ", ") : '') + error.message;
                     tsm.testStarted({ name: name })
                         .testFailed({
