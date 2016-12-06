@@ -1,6 +1,6 @@
 {
   "name": "bootlint-teamcity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BootLint TeamCity Reporter which group by files and BootLint Rule using TeamCity Test Suite",
   "main": "index.js",
   "scripts": {
